@@ -38,7 +38,7 @@ function App() {
               video.classList.add('opacity-100');
             }}
           >
-            <source src="/src/assets/images/hero-bg.mp4" type="video/mp4" />
+            <source src="/hero-bg.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
