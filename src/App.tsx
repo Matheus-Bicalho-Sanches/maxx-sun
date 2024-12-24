@@ -1,6 +1,6 @@
 import logo from './assets/images/logo.png'
 import solarSunset from './assets/images/solar-sunset.jpg'
-import { FaSolarPanel, FaTools, FaClock, FaMoneyBillWave } from 'react-icons/fa'
+import { FaSolarPanel, FaTools, FaClock, FaMoneyBillWave, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa'
 
 function App() {
   return (
@@ -140,6 +140,120 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-zinc-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Column 1 - Company Info */}
+            <div>
+              <img 
+                src={logo} 
+                alt="Maxx Sun Logo" 
+                className="h-20 w-auto mb-6" 
+              />
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <FaMapMarkerAlt className="text-yellow-500 text-xl mt-1" />
+                  <p className="text-gray-300">
+                    Av. Higienópolis, 1080 - Sala 1<br />
+                    Londrina - PR 86020-080
+                  </p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <FaEnvelope className="text-yellow-500 text-xl" />
+                  <a href="mailto:contato@maxxsun.com.br" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    contato@maxxsun.com.br
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Column 2 - Services */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Nossos Serviços</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Energia Solar Residencial
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Energia Solar Comercial
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Energia Solar Industrial
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Manutenção de Sistemas
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3 - Company */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Empresa</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Sobre Nós
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Projetos Realizados
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Trabalhe Conosco
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 4 - Legal */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Legal</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Política de Privacidade
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Termos de Uso
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                    Garantia
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <div className="mt-16 pt-8 border-t border-zinc-800 text-center">
+            <p className="text-gray-400">
+              © {new Date().getFullYear()} Maxx Sun. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   )
 }
