@@ -16,3 +16,9 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
+/* Logo outline effect */
+.logo-outline {
+  filter: drop-shadow(0 0 0.75px white)
+         drop-shadow(0 0 0.75px white);
+}
