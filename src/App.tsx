@@ -1,8 +1,19 @@
 import logo from './assets/images/logo.png'
 import solarSunset from './assets/images/solar-sunset.jpg'
 import { FaSolarPanel, FaTools, FaClock, FaMoneyBillWave, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa'
+import { useState } from 'react'
 
 function App() {
+  const [energyBill, setEnergyBill] = useState(400)
+  const monthlySavings = energyBill * 0.5 // 50% savings
+
+  const formatCurrency = (value: number) => {
+    return value.toLocaleString('pt-BR', {
+      style: 'currency',
+      currency: 'BRL'
+    })
+  }
+
   return (
     <main className="w-full min-h-screen">
       {/* Header */}
@@ -58,6 +69,69 @@ function App() {
             <div className="flex justify-center">
               <button className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
                 Solicitar Orçamento GRATUITAMENTE
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Savings Calculator Section */}
+      <section className="bg-zinc-900 py-20">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+            Calcule Sua Economia
+          </h2>
+          
+          <div className="bg-zinc-800 rounded-2xl p-8 md:p-12">
+            {/* Bill Input */}
+            <div className="mb-8">
+              <label className="block text-gray-300 text-lg mb-4">
+                Qual sua conta de energia mensal?
+              </label>
+              <input
+                type="range"
+                min="400"
+                max="10000"
+                step="100"
+                value={energyBill}
+                onChange={(e) => setEnergyBill(Number(e.target.value))}
+                className="w-full h-2 bg-zinc-700 rounded-lg appearance-none cursor-pointer accent-yellow-500"
+              />
+              <div className="flex justify-between mt-2 text-gray-400">
+                <span>R$ 400</span>
+                <span>R$ 10.000</span>
+              </div>
+            </div>
+
+            {/* Results */}
+            <div className="space-y-6">
+              <div className="bg-zinc-900 rounded-xl p-6">
+                <p className="text-gray-300 mb-2">Sua conta atual:</p>
+                <p className="text-3xl font-bold text-white">
+                  {formatCurrency(energyBill)}
+                </p>
+              </div>
+
+              <div className="bg-zinc-900 rounded-xl p-6">
+                <p className="text-gray-300 mb-2">Economia mensal estimada:</p>
+                <p className="text-3xl font-bold text-yellow-500">
+                  {formatCurrency(monthlySavings)}
+                </p>
+              </div>
+
+              <div className="bg-zinc-900 rounded-xl p-6">
+                <p className="text-gray-300 mb-2">Economia anual estimada:</p>
+                <p className="text-3xl font-bold text-yellow-500">
+                  {formatCurrency(monthlySavings * 12)}
+                </p>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="mt-8 text-center">
+              <button className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-lg text-lg transition-colors inline-flex items-center space-x-2">
+                <span>Fazer Simulação Detalhada</span>
+                <FaSolarPanel className="text-xl" />
               </button>
             </div>
           </div>
