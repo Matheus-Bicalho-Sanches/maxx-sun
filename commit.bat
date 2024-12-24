@@ -6,17 +6,8 @@ echo ===================================
 :: Adiciona todas as alterações
 git add .
 
-:: Mostra o status atual
-echo.
-echo Status atual do repositorio:
-git status
-
-:: Solicita mensagem do commit
-echo.
-set /p commit_message="Digite a mensagem do commit: "
-
 :: Faz o commit com a mensagem
-git commit -m "%commit_message%"
+git commit -m "chore: add react-icons dependency"
 
 :: Faz o push para o repositório remoto
 echo.
@@ -27,4 +18,4 @@ echo.
 echo ===================================
 echo    Commit realizado com sucesso!
 echo ===================================
-pause 
+pause
