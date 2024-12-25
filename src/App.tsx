@@ -129,9 +129,9 @@ function App() {
       </section>
 
       {/* Savings Calculator Section */}
-      <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
+      <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-12">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-yellow-600 mb-10 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-yellow-600 mb-8 text-center">
             Calcule Sua Economia
           </h2>
           
@@ -172,7 +172,9 @@ function App() {
                   </div>
                   <div className="group">
                     <h4 className="text-gray-800 font-semibold text-sm mb-0.5 group-hover:text-yellow-600 transition-colors">Energia Limpa</h4>
-                    <p className="text-gray-600 text-sm group-hover:text-gray-800 transition-colors">Contribua com o meio ambiente usando energia renovável</p>
+                    <p className="text-gray-600 text-sm group-hover:text-gray-800 transition-colors">
+                      Contribua com o meio ambiente usando energia renovável
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3 hover:translate-x-1 transition-transform duration-300 ease-out">
@@ -262,9 +264,9 @@ function App() {
       </section>
 
       {/* Diferenciais Section */}
-      <section className="bg-gradient-to-b from-orange-50 to-yellow-50 py-16 md:py-24">
+      <section className="bg-gradient-to-b from-orange-50 to-yellow-50 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 mb-10 text-center">
             Diferenciais da Maxx Sun
           </h2>
           
@@ -327,10 +329,10 @@ function App() {
                   <FaClock />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
-                  Entrega ágil
+                  Entrega e instalação rápida
                 </h3>
                 <p className="text-gray-600">
-                  Nossos fornecedores entregam o seu equipamento com segurança e em tempo recorde.
+                  Comece a economizar em sua conta de luz em aproximadamente 15 dias
                 </p>
               </div>
             </div>
@@ -347,7 +349,7 @@ function App() {
 
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Stats */}
-            <div className="w-full lg:w-1/2 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Projects */}
               <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
                 <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
@@ -370,17 +372,6 @@ function App() {
                   {isVisible && <AnimatedNumber end={10000} suffix="+" />}
                 </div>
                 <p className="text-gray-600">Placas Instaladas</p>
-              </div>
-            </div>
-
-            {/* Founder Image Space */}
-            <div className="w-full lg:w-1/2 flex justify-center">
-              <div className="relative w-[400px] bg-zinc-800 rounded-xl overflow-hidden p-4">
-                <img 
-                  src="/founder.jpg" 
-                  alt="Fundador da Maxx Sun" 
-                  className="w-full h-full object-cover rounded-lg"
-                />
               </div>
             </div>
           </div>
