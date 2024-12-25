@@ -77,62 +77,132 @@ function App() {
 
       {/* Savings Calculator Section */}
       <section className="bg-zinc-900 py-20">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
             Calcule Sua Economia
           </h2>
           
-          <div className="bg-zinc-800 rounded-2xl p-8 md:p-12">
-            {/* Bill Input */}
-            <div className="mb-8">
-              <label className="block text-gray-300 text-lg mb-4">
-                Qual sua conta de energia mensal?
-              </label>
-              <input
-                type="range"
-                min="400"
-                max="10000"
-                step="100"
-                value={energyBill}
-                onChange={(e) => setEnergyBill(Number(e.target.value))}
-                className="w-full h-2 bg-zinc-700 rounded-lg appearance-none cursor-pointer accent-yellow-500"
-              />
-              <div className="flex justify-between mt-2 text-gray-400">
-                <span>R$ 400</span>
-                <span>R$ 10.000</span>
-              </div>
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            {/* Advantages Checklist */}
+            <div className="w-full lg:w-1/2 bg-zinc-800/50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-yellow-500 mb-8">
+                Por que escolher energia solar?
+              </h3>
+              <ul className="space-y-6">
+                <li className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1">Economia Imediata</h4>
+                    <p className="text-gray-300">Reduza sua conta de energia desde o primeiro mês de instalação</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1">Valorização do Imóvel</h4>
+                    <p className="text-gray-300">Aumente o valor do seu imóvel com energia limpa e sustentável</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1">Energia Limpa</h4>
+                    <p className="text-gray-300">Contribua com o meio ambiente usando energia renovável</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1">Retorno Garantido</h4>
+                    <p className="text-gray-300">Investimento com payback entre 3 a 5 anos em média</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1">Manutenção Mínima</h4>
+                    <p className="text-gray-300">Sistema de alta durabilidade com manutenção simples e econômica</p>
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            {/* Results */}
-            <div className="space-y-6">
-              <div className="bg-zinc-900 rounded-xl p-6">
-                <p className="text-gray-300 mb-2">Sua conta atual:</p>
-                <p className="text-3xl font-bold text-white">
-                  {formatCurrency(energyBill)}
-                </p>
+            {/* Calculator */}
+            <div className="w-full lg:w-1/2 bg-zinc-800 rounded-2xl p-6 lg:p-8">
+              {/* Bill Input */}
+              <div className="mb-6">
+                <label className="block text-gray-300 text-lg mb-4">
+                  Qual sua conta de energia mensal?
+                </label>
+                <input
+                  type="range"
+                  min="400"
+                  max="10000"
+                  step="100"
+                  value={energyBill}
+                  onChange={(e) => setEnergyBill(Number(e.target.value))}
+                  className="mb-2"
+                />
+                <div className="flex justify-between text-gray-400 text-sm">
+                  <span>R$ 400</span>
+                  <span className="text-yellow-500 font-medium">
+                    {formatCurrency(energyBill)}
+                  </span>
+                  <span>R$ 10.000</span>
+                </div>
               </div>
 
-              <div className="bg-zinc-900 rounded-xl p-6">
-                <p className="text-gray-300 mb-2">Economia mensal estimada:</p>
-                <p className="text-3xl font-bold text-yellow-500">
-                  {formatCurrency(monthlySavings)}
-                </p>
+              {/* Results */}
+              <div className="space-y-4">
+                <div className="bg-zinc-900 rounded-xl p-4">
+                  <p className="text-gray-300 text-sm mb-1">Sua conta atual:</p>
+                  <p className="text-2xl font-bold text-white">
+                    {formatCurrency(energyBill)}
+                  </p>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-4">
+                  <p className="text-gray-300 text-sm mb-1">Economia mensal estimada:</p>
+                  <p className="text-2xl font-bold text-yellow-500">
+                    {formatCurrency(monthlySavings)}
+                  </p>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-4">
+                  <p className="text-gray-300 text-sm mb-1">Estimativa de investimento:</p>
+                  <p className="text-2xl font-bold text-yellow-500">
+                    {formatCurrency(monthlySavings * 30)}
+                  </p>
+                </div>
               </div>
 
-              <div className="bg-zinc-900 rounded-xl p-6">
-                <p className="text-gray-300 mb-2">Economia anual estimada:</p>
-                <p className="text-3xl font-bold text-yellow-500">
-                  {formatCurrency(monthlySavings * 12)}
-                </p>
+              {/* CTA Button */}
+              <div className="mt-6 text-center">
+                <button className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-lg text-base transition-colors inline-flex items-center space-x-2">
+                  <span>Fazer Simulação Detalhada</span>
+                  <FaSolarPanel className="text-lg" />
+                </button>
               </div>
-            </div>
-
-            {/* CTA Button */}
-            <div className="mt-8 text-center">
-              <button className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-lg text-lg transition-colors inline-flex items-center space-x-2">
-                <span>Fazer Simulação Detalhada</span>
-                <FaSolarPanel className="text-xl" />
-              </button>
             </div>
           </div>
         </div>

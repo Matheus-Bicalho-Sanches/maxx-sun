@@ -22,3 +22,68 @@ html, body {
   filter: drop-shadow(0 0 0.75px white)
          drop-shadow(0 0 0.75px white);
 }
+
+/* Custom slider styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 100%;
+  background: #3f3f46; /* zinc-700 */
+  border-radius: 8px;
+  outline: none;
+  margin: 10px 0; /* Add margin to account for the thumb size */
+}
+
+/* Thumb styles */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #eab308; /* yellow-500 */
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fef08a; /* yellow-200 */
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.3);
+  transition: all 0.2s ease;
+  margin-top: -8px; /* Center the thumb vertically: (thumb height - track height) / -2 */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #eab308;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fef08a;
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.3);
+  transition: all 0.2s ease;
+  margin-top: -8px; /* Center the thumb vertically */
+}
+
+/* Active state */
+input[type="range"]::-webkit-slider-thumb:active {
+  background: #facc15; /* yellow-400 */
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(234, 179, 8, 0.5);
+}
+
+input[type="range"]::-moz-range-thumb:active {
+  background: #facc15;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(234, 179, 8, 0.5);
+}
+
+/* Track styles */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 8px;
+  background: #3f3f46; /* Ensure consistent track color */
+}
+
+input[type="range"]::-moz-range-track {
+  height: 8px;
+  border-radius: 8px;
+  background: #3f3f46;
+}
