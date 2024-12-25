@@ -1,110 +1,184 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+/* Base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Custom Typography */
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  section {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
+/* Section Backgrounds */
+.section-pattern {
+  position: absolute;
+  inset: 0;
+  background-size: 30px 30px;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+  background-image: radial-gradient(circle, #facc15 1px, transparent 1px);
 }
 
-/* Logo outline effect */
-.logo-outline {
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9))
-         drop-shadow(0 0 8px rgba(255, 255, 255, 0.8))
-         drop-shadow(0 0 12px rgba(255, 255, 255, 0.7))
-         drop-shadow(0 0 16px rgba(255, 255, 255, 0.6));
+.section-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(45deg, transparent 33.33%, #fff 33.33%, #fff 66.66%, transparent 66.66%);
+  background-size: 30px 30px;
+  opacity: 0.1;
+}
+
+/* Content Container */
+.section-content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
-/* Logo container styles */
-.logo-outline::before {
+/* Enhanced Section Titles */
+.section-title {
+  @apply relative inline-block text-2xl md:text-3xl lg:text-4xl font-bold;
+  margin-bottom: 2rem;
+}
+
+.section-title::before {
+  content: '';
+  @apply absolute -left-4 -right-4 top-1/2 -bottom-4 bg-yellow-100/50 -z-10 rounded-lg transform -rotate-1;
+}
+
+.section-title::after {
+  content: '';
+  @apply absolute -bottom-4 left-0 right-0 h-1 bg-yellow-500 rounded-full;
+  width: 100%;
+  transform: none;
+  translate: none;
+}
+
+/* Card Hover Effects */
+.hover-card {
+  @apply transition-all duration-300;
+  transform: perspective(1000px) rotateX(0) rotateY(0);
+  transform-style: preserve-3d;
+}
+
+.hover-card:hover {
+  transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
+  box-shadow: 
+    0 20px 40px -15px rgba(0,0,0,0.1),
+    0 0 20px rgba(250, 204, 21, 0.1);
+}
+
+/* Scroll Reveal Animation */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-on-scroll {
+  animation: revealUp 0.8s ease-out forwards;
+}
+
+/* Enhanced Hero Title Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  animation: fadeInUp 0.8s ease-out;
+  position: relative;
+}
+
+.hero-title::after {
   content: '';
   position: absolute;
-  inset: -100%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0.3) 30%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0.1) 70%,
-    transparent 100%
-  );
-  border-radius: 50%;
-  z-index: -1;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #facc15, transparent);
+  animation: expandWidth 1.2s ease-out forwards;
 }
 
-/* Custom slider styles */
+@keyframes expandWidth {
+  from { width: 0; }
+  to { width: 100px; }
+}
+
+/* Timeline Enhancements */
+.timeline-line {
+  position: relative;
+}
+
+.timeline-line::before {
+  content: '';
+  @apply absolute left-[15px] md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-200;
+}
+
+/* Card Decorations */
+.card-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at top right, rgba(250, 204, 21, 0.1), transparent 70%);
+  pointer-events: none;
+}
+
+/* Enhanced Slider Styles */
 input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 8px;
-  width: 100%;
-  background: #3f3f46; /* zinc-700 */
-  border-radius: 8px;
-  outline: none;
-  margin: 10px 0; /* Add margin to account for the thumb size */
+  @apply w-full h-2 bg-gradient-to-r from-yellow-100 via-yellow-300 to-yellow-100 rounded-lg appearance-none cursor-pointer;
+  position: relative;
 }
 
-/* Thumb styles */
 input[type="range"]::-webkit-slider-thumb {
+  @apply w-6 h-6 bg-yellow-500 rounded-full appearance-none cursor-pointer transition-all duration-200 hover:bg-yellow-400 hover:scale-110;
   -webkit-appearance: none;
-  appearance: none;
-  width: 24px;
-  height: 24px;
-  background: #eab308; /* yellow-500 */
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid #fef08a; /* yellow-200 */
-  box-shadow: 0 0 10px rgba(234, 179, 8, 0.3);
-  transition: all 0.2s ease;
-  margin-top: -8px; /* Center the thumb vertically: (thumb height - track height) / -2 */
+  box-shadow: 
+    0 0 0 4px rgba(250, 204, 21, 0.1),
+    0 0 0 8px rgba(250, 204, 21, 0.05);
 }
 
-input[type="range"]::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
-  background: #eab308;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid #fef08a;
-  box-shadow: 0 0 10px rgba(234, 179, 8, 0.3);
-  transition: all 0.2s ease;
-  margin-top: -8px; /* Center the thumb vertically */
+/* Enhanced Logo Glow */
+.logo-outline {
+  filter: 
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))
+    drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+  transition: filter 0.3s ease;
 }
 
-/* Active state */
-input[type="range"]::-webkit-slider-thumb:active {
-  background: #facc15; /* yellow-400 */
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(234, 179, 8, 0.5);
-}
-
-input[type="range"]::-moz-range-thumb:active {
-  background: #facc15;
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(234, 179, 8, 0.5);
-}
-
-/* Track styles */
-input[type="range"]::-webkit-slider-runnable-track {
-  height: 8px;
-  border-radius: 8px;
-  background: #3f3f46; /* Ensure consistent track color */
-}
-
-input[type="range"]::-moz-range-track {
-  height: 8px;
-  border-radius: 8px;
-  background: #3f3f46;
+.logo-outline:hover {
+  filter: 
+    drop-shadow(0 0 15px rgba(255, 255, 255, 0.4))
+    drop-shadow(0 0 30px rgba(255, 255, 255, 0.3));
 }
