@@ -16,22 +16,6 @@ function App() {
 
   return (
     <main className="w-full min-h-screen">
-      {/* Header */}
-      <header className="fixed top-0 left-0 w-full z-50 px-4 py-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative group inline-block">
-            {/* Glow effect */}
-            <div className="absolute inset-0 bg-white/10 rounded-full blur-md group-hover:bg-white/20 transition-all duration-300"></div>
-            {/* Logo with outline effect */}
-            <img 
-              src={logo} 
-              alt="Maxx Sun Logo" 
-              className="h-16 md:h-28 lg:h-40 w-auto relative transition-all duration-300 logo-outline" 
-            />
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="relative w-full h-screen">
         {/* Video Background */}
@@ -55,6 +39,19 @@ function App() {
         </div>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
+        
+        {/* Logo */}
+        <div className="absolute top-4 left-4 lg:left-8 z-10">
+          <div className="relative">
+            {/* Glowing circle background */}
+            <div className="absolute inset-0 rounded-full bg-white/10 blur-xl transform scale-150"></div>
+            <img 
+              src={logo} 
+              alt="Maxx Sun Logo" 
+              className="h-16 md:h-28 lg:h-40 w-auto logo-outline relative" 
+            />
+          </div>
+        </div>
         
         {/* Content */}
         <div className="relative h-full w-full px-4 flex items-center">

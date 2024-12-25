@@ -19,8 +19,29 @@ html, body {
 
 /* Logo outline effect */
 .logo-outline {
-  filter: drop-shadow(0 0 0.75px white)
-         drop-shadow(0 0 0.75px white);
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9))
+         drop-shadow(0 0 8px rgba(255, 255, 255, 0.8))
+         drop-shadow(0 0 12px rgba(255, 255, 255, 0.7))
+         drop-shadow(0 0 16px rgba(255, 255, 255, 0.6));
+  position: relative;
+  z-index: 2;
+}
+
+/* Logo container styles */
+.logo-outline::before {
+  content: '';
+  position: absolute;
+  inset: -100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.3) 30%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 70%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  z-index: -1;
 }
 
 /* Custom slider styles */
