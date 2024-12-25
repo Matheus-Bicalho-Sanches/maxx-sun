@@ -74,81 +74,81 @@ function App() {
 
       {/* Savings Calculator Section */}
       <section className="bg-zinc-900 py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">
             Calcule Sua Economia
           </h2>
           
-          <div className="flex flex-col lg:flex-row gap-8 items-start">
+          <div className="flex flex-col lg:flex-row gap-12 items-start justify-center">
             {/* Advantages Checklist */}
-            <div className="w-full lg:w-1/2 bg-zinc-800/50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-yellow-500 mb-8">
+            <div className="w-full lg:w-[42%] bg-zinc-800/50 rounded-xl p-5">
+              <h3 className="text-xl font-bold text-yellow-500 mb-4">
                 Por que escolher energia solar?
               </h3>
-              <ul className="space-y-6">
-                <li className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
-                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <ul className="space-y-3">
+                <li className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-1">Economia Imediata</h4>
-                    <p className="text-gray-300">Reduza sua conta de energia desde o primeiro mês de instalação</p>
+                    <h4 className="text-white font-semibold text-sm mb-0.5">Economia Imediata</h4>
+                    <p className="text-gray-300 text-sm">Reduza sua conta de energia desde o primeiro mês de instalação</p>
                   </div>
                 </li>
-                <li className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
-                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <li className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-1">Valorização do Imóvel</h4>
-                    <p className="text-gray-300">Aumente o valor do seu imóvel com energia limpa e sustentável</p>
+                    <h4 className="text-white font-semibold text-sm mb-0.5">Valorização do Imóvel</h4>
+                    <p className="text-gray-300 text-sm">Aumente o valor do seu imóvel com energia limpa e sustentável</p>
                   </div>
                 </li>
-                <li className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
-                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <li className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-1">Energia Limpa</h4>
-                    <p className="text-gray-300">Contribua com o meio ambiente usando energia renovável</p>
+                    <h4 className="text-white font-semibold text-sm mb-0.5">Energia Limpa</h4>
+                    <p className="text-gray-300 text-sm">Contribua com o meio ambiente usando energia renovável</p>
                   </div>
                 </li>
-                <li className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
-                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <li className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-1">Retorno Garantido</h4>
-                    <p className="text-gray-300">Investimento com payback entre 3 a 5 anos em média</p>
+                    <h4 className="text-white font-semibold text-sm mb-0.5">Retorno Garantido</h4>
+                    <p className="text-gray-300 text-sm">Investimento com payback entre 3 a 5 anos em média</p>
                   </div>
                 </li>
-                <li className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
-                    <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <li className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1">
+                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-1">Manutenção Mínima</h4>
-                    <p className="text-gray-300">Sistema de alta durabilidade com manutenção simples e econômica</p>
+                    <h4 className="text-white font-semibold text-sm mb-0.5">Manutenção Mínima</h4>
+                    <p className="text-gray-300 text-sm">Sistema de alta durabilidade com manutenção simples e econômica</p>
                   </div>
                 </li>
               </ul>
             </div>
 
             {/* Calculator */}
-            <div className="w-full lg:w-1/2 bg-zinc-800 rounded-2xl p-6 lg:p-8">
+            <div className="w-full lg:w-[42%] bg-zinc-800 rounded-xl p-5">
               {/* Bill Input */}
-              <div className="mb-6">
-                <label className="block text-gray-300 text-lg mb-4">
+              <div className="mb-4">
+                <label className="block text-gray-300 text-base mb-3">
                   Qual sua conta de energia mensal?
                 </label>
                 <input
@@ -160,7 +160,7 @@ function App() {
                   onChange={(e) => setEnergyBill(Number(e.target.value))}
                   className="mb-2"
                 />
-                <div className="flex justify-between text-gray-400 text-sm">
+                <div className="flex justify-between text-gray-400 text-xs">
                   <span>R$ 400</span>
                   <span className="text-yellow-500 font-medium">
                     {formatCurrency(energyBill)}
@@ -170,34 +170,34 @@ function App() {
               </div>
 
               {/* Results */}
-              <div className="space-y-4">
-                <div className="bg-zinc-900 rounded-xl p-4">
-                  <p className="text-gray-300 text-sm mb-1">Sua conta atual:</p>
-                  <p className="text-2xl font-bold text-white">
+              <div className="space-y-3">
+                <div className="bg-zinc-900 rounded-lg p-3">
+                  <p className="text-gray-300 text-xs mb-1">Sua conta atual:</p>
+                  <p className="text-xl font-bold text-white">
                     {formatCurrency(energyBill)}
                   </p>
                 </div>
 
-                <div className="bg-zinc-900 rounded-xl p-4">
-                  <p className="text-gray-300 text-sm mb-1">Economia mensal estimada:</p>
-                  <p className="text-2xl font-bold text-yellow-500">
+                <div className="bg-zinc-900 rounded-lg p-3">
+                  <p className="text-gray-300 text-xs mb-1">Economia mensal estimada:</p>
+                  <p className="text-xl font-bold text-yellow-500">
                     {formatCurrency(monthlySavings)}
                   </p>
                 </div>
 
-                <div className="bg-zinc-900 rounded-xl p-4">
-                  <p className="text-gray-300 text-sm mb-1">Estimativa de investimento:</p>
-                  <p className="text-2xl font-bold text-yellow-500">
+                <div className="bg-zinc-900 rounded-lg p-3">
+                  <p className="text-gray-300 text-xs mb-1">Estimativa de investimento:</p>
+                  <p className="text-xl font-bold text-yellow-500">
                     {formatCurrency(monthlySavings * 30)}
                   </p>
                 </div>
               </div>
 
               {/* CTA Button */}
-              <div className="mt-6 text-center">
-                <button className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-lg text-base transition-colors inline-flex items-center space-x-2">
+              <div className="mt-4 text-center">
+                <button className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors inline-flex items-center space-x-2">
                   <span>Fazer Simulação Detalhada</span>
-                  <FaSolarPanel className="text-lg" />
+                  <FaSolarPanel className="text-base" />
                 </button>
               </div>
             </div>
