@@ -102,11 +102,13 @@ function App() {
           <div className="relative">
             {/* Glowing circle background */}
             <div className="absolute inset-0 rounded-full bg-white/10 blur-xl transform scale-150"></div>
-            <img 
-              src={logo} 
-              alt="Maxx Sun Logo" 
-              className="h-24 md:h-28 lg:h-40 w-auto logo-outline relative" 
-            />
+            <div className="rounded-full overflow-hidden bg-white/5 backdrop-blur-sm">
+              <img 
+                src={logo} 
+                alt="Maxx Sun Logo" 
+                className="h-24 md:h-28 lg:h-40 w-auto logo-outline relative aspect-square object-cover" 
+              />
+            </div>
           </div>
         </div>
         
@@ -293,63 +295,63 @@ function App() {
 
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-[15px] md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-yellow-200"></div>
+              <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-200"></div>
 
               {/* Step 1 */}
-              <div className="relative flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24 reveal-on-scroll">
-                <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+              <div className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between mb-12 md:mb-24 reveal-on-scroll pl-12 md:pl-0">
+                <div className="flex-1 md:text-right md:pr-12">
                   <h3 className="heading-md text-gray-800 mb-2">Contato Inicial</h3>
                   <p className="text-body">Entre em contato via WhatsApp ou formulário. Nossa equipe responderá rapidamente para entender suas necessidades.</p>
                 </div>
-                <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <div className="absolute left-0 md:left-1/2 top-0 md:top-1/2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:-translate-x-1/2 md:-translate-y-1/2 shadow-lg">
                   <span className="text-white font-bold">1</span>
                 </div>
                 <div className="flex-1 md:pl-12 hidden md:block"></div>
               </div>
 
               {/* Step 2 */}
-              <div className="relative flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24">
+              <div className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between mb-12 md:mb-24 pl-12 md:pl-0">
                 <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
-                <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <div className="absolute left-0 md:left-1/2 top-0 md:top-1/2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:-translate-x-1/2 md:-translate-y-1/2 shadow-lg">
                   <span className="text-white font-bold">2</span>
                 </div>
-                <div className="flex-1 md:pl-12 mb-4 md:mb-0">
+                <div className="flex-1 md:pl-12">
                   <h3 className="heading-md text-gray-800 mb-2">Análise de Consumo</h3>
                   <p className="text-body">Envie sua conta de energia. Nossa equipe técnica fará uma análise detalhada para dimensionar o sistema ideal.</p>
                 </div>
               </div>
 
               {/* Step 3 */}
-              <div className="relative flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24">
-                <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+              <div className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between mb-12 md:mb-24 pl-12 md:pl-0">
+                <div className="flex-1 md:text-right md:pr-12">
                   <h3 className="heading-md text-gray-800 mb-2">Visita Técnica</h3>
                   <p className="text-body">Agendamos uma visita para avaliar o local, confirmar medidas e discutir os detalhes do projeto pessoalmente.</p>
                 </div>
-                <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <div className="absolute left-0 md:left-1/2 top-0 md:top-1/2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:-translate-x-1/2 md:-translate-y-1/2 shadow-lg">
                   <span className="text-white font-bold">3</span>
                 </div>
                 <div className="flex-1 md:pl-12 hidden md:block"></div>
               </div>
 
               {/* Step 4 */}
-              <div className="relative flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24">
+              <div className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between mb-12 md:mb-24 pl-12 md:pl-0">
                 <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
-                <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <div className="absolute left-0 md:left-1/2 top-0 md:top-1/2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:-translate-x-1/2 md:-translate-y-1/2 shadow-lg">
                   <span className="text-white font-bold">4</span>
                 </div>
-                <div className="flex-1 md:pl-12 mb-4 md:mb-0">
+                <div className="flex-1 md:pl-12">
                   <h3 className="heading-md text-gray-800 mb-2">Proposta e Contrato</h3>
                   <p className="text-body">Apresentamos a proposta detalhada com todas as especificações técnicas e condições comerciais para sua aprovação.</p>
                 </div>
               </div>
 
               {/* Step 5 */}
-              <div className="relative flex flex-col md:flex-row items-center md:justify-between">
-                <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+              <div className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between pl-12 md:pl-0">
+                <div className="flex-1 md:text-right md:pr-12">
                   <h3 className="heading-md text-gray-800 mb-2">Instalação</h3>
                   <p className="text-body">Após a aprovação, agendamos a instalação que é realizada em aproximadamente 15 dias por nossa equipe especializada.</p>
                 </div>
-                <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <div className="absolute left-0 md:left-1/2 top-0 md:top-1/2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:-translate-x-1/2 md:-translate-y-1/2 shadow-lg">
                   <span className="text-white font-bold">5</span>
                 </div>
                 <div className="flex-1 md:pl-12 hidden md:block"></div>
@@ -669,11 +671,13 @@ function App() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col items-center text-center">
             {/* Logo */}
-            <img 
-              src={logo} 
-              alt="Maxx Sun Logo" 
-              className="h-20 w-auto mb-8" 
-            />
+            <div className="rounded-full overflow-hidden bg-white/5 w-20 h-20 mb-8">
+              <img 
+                src={logo} 
+                alt="Maxx Sun Logo" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
             
             {/* Contact Info */}
             <div className="space-y-4 mb-8">
