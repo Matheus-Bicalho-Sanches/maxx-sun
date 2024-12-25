@@ -1,6 +1,6 @@
 import logo from './assets/images/logo.png'
 import solarSunset from './assets/images/solar-sunset.jpg'
-import { FaSolarPanel, FaTools, FaClock, FaMoneyBillWave, FaMapMarkerAlt, FaEnvelope, FaInstagram, FaGithub } from 'react-icons/fa'
+import { FaSolarPanel, FaTools, FaClock, FaMoneyBillWave, FaMapMarkerAlt, FaEnvelope, FaInstagram, FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { useState, useEffect, useRef } from 'react'
 
 function App() {
@@ -129,82 +129,82 @@ function App() {
       </section>
 
       {/* Savings Calculator Section */}
-      <section className="bg-zinc-900 py-20">
+      <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-yellow-600 mb-10 text-center">
             Calcule Sua Economia
           </h2>
           
           <div className="flex flex-col lg:flex-row gap-12 items-start justify-center">
             {/* Advantages Checklist */}
-            <div className="w-full lg:w-[42%] bg-zinc-800/50 rounded-xl p-5 hover:bg-zinc-800/70 transition-colors duration-300">
-              <h3 className="text-xl font-bold text-yellow-500 mb-4">
+            <div className="w-full lg:w-[42%] bg-white/80 rounded-xl p-5 hover:bg-white transition-colors duration-300 shadow-lg">
+              <h3 className="text-xl font-bold text-yellow-600 mb-4">
                 Por que escolher energia solar?
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3 hover:translate-x-1 transition-transform duration-300 ease-out">
                   <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1 animate-pulse">
-                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div className="group">
-                    <h4 className="text-white font-semibold text-sm mb-0.5 group-hover:text-yellow-500 transition-colors">Economia Imediata</h4>
-                    <p className="text-gray-300 text-sm group-hover:text-gray-200 transition-colors">Reduza sua conta de energia desde o primeiro mês de instalaç��o</p>
+                    <h4 className="text-gray-800 font-semibold text-sm mb-0.5 group-hover:text-yellow-600 transition-colors">Economia Imediata</h4>
+                    <p className="text-gray-600 text-sm group-hover:text-gray-800 transition-colors">Reduza sua conta de energia desde o primeiro mês de instalação</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3 hover:translate-x-1 transition-transform duration-300 ease-out">
                   <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1 animate-pulse">
-                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div className="group">
-                    <h4 className="text-white font-semibold text-sm mb-0.5 group-hover:text-yellow-500 transition-colors">Valorização do Imóvel</h4>
-                    <p className="text-gray-300 text-sm group-hover:text-gray-200 transition-colors">Aumente o valor do seu imóvel com energia limpa e sustentável</p>
+                    <h4 className="text-gray-800 font-semibold text-sm mb-0.5 group-hover:text-yellow-600 transition-colors">Valorização do Imóvel</h4>
+                    <p className="text-gray-600 text-sm group-hover:text-gray-800 transition-colors">Aumente o valor do seu imóvel com energia limpa e sustentável</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3 hover:translate-x-1 transition-transform duration-300 ease-out">
                   <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1 animate-pulse">
-                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div className="group">
-                    <h4 className="text-white font-semibold text-sm mb-0.5 group-hover:text-yellow-500 transition-colors">Energia Limpa</h4>
-                    <p className="text-gray-300 text-sm group-hover:text-gray-200 transition-colors">Contribua com o meio ambiente usando energia renovável</p>
+                    <h4 className="text-gray-800 font-semibold text-sm mb-0.5 group-hover:text-yellow-600 transition-colors">Energia Limpa</h4>
+                    <p className="text-gray-600 text-sm group-hover:text-gray-800 transition-colors">Contribua com o meio ambiente usando energia renovável</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3 hover:translate-x-1 transition-transform duration-300 ease-out">
                   <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1 animate-pulse">
-                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div className="group">
-                    <h4 className="text-white font-semibold text-sm mb-0.5 group-hover:text-yellow-500 transition-colors">Retorno Garantido</h4>
-                    <p className="text-gray-300 text-sm group-hover:text-gray-200 transition-colors">Investimento com payback entre 3 a 5 anos em média</p>
+                    <h4 className="text-gray-800 font-semibold text-sm mb-0.5 group-hover:text-yellow-600 transition-colors">Retorno Garantido</h4>
+                    <p className="text-gray-600 text-sm group-hover:text-gray-800 transition-colors">Investimento com payback entre 3 a 5 anos em média</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3 hover:translate-x-1 transition-transform duration-300 ease-out">
                   <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center mt-1 animate-pulse">
-                    <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div className="group">
-                    <h4 className="text-white font-semibold text-sm mb-0.5 group-hover:text-yellow-500 transition-colors">Manutenção Mínima</h4>
-                    <p className="text-gray-300 text-sm group-hover:text-gray-200 transition-colors">Sistema de alta durabilidade com manutenção simples e econômica</p>
+                    <h4 className="text-gray-800 font-semibold text-sm mb-0.5 group-hover:text-yellow-600 transition-colors">Manutenção Mínima</h4>
+                    <p className="text-gray-600 text-sm group-hover:text-gray-800 transition-colors">Sistema de alta durabilidade com manutenção simples e econômica</p>
                   </div>
                 </li>
               </ul>
             </div>
 
             {/* Calculator */}
-            <div className="w-full lg:w-[42%] bg-zinc-800 rounded-xl p-5 hover:bg-zinc-800/90 transition-all duration-300 hover:shadow-lg hover:shadow-black/20">
+            <div className="w-full lg:w-[42%] bg-white/90 rounded-xl p-5 hover:bg-white transition-all duration-300 shadow-lg">
               {/* Bill Input */}
               <div className="mb-4">
-                <label className="block text-gray-300 text-base mb-3 hover:text-yellow-500 transition-colors">
+                <label className="block text-gray-700 text-base mb-3 hover:text-yellow-600 transition-colors">
                   Qual sua conta de energia mensal?
                 </label>
                 <input
@@ -216,9 +216,9 @@ function App() {
                   onChange={(e) => setEnergyBill(Number(e.target.value))}
                   className="mb-2"
                 />
-                <div className="flex justify-between text-gray-400 text-xs">
+                <div className="flex justify-between text-gray-500 text-xs">
                   <span>R$ 400</span>
-                  <span className="text-yellow-500 font-medium animate-pulse">
+                  <span className="text-yellow-600 font-medium animate-pulse">
                     {formatCurrency(energyBill)}
                   </span>
                   <span>R$ 10.000</span>
@@ -227,23 +227,23 @@ function App() {
 
               {/* Results */}
               <div className="space-y-3">
-                <div className="bg-zinc-900 rounded-lg p-3 hover:bg-zinc-900/70 transition-colors duration-300 cursor-default">
-                  <p className="text-gray-300 text-xs mb-1">Sua conta atual:</p>
-                  <p className="text-xl font-bold text-white">
+                <div className="bg-yellow-50 rounded-lg p-3 hover:bg-yellow-100/70 transition-colors duration-300 cursor-default">
+                  <p className="text-gray-600 text-xs mb-1">Sua conta atual:</p>
+                  <p className="text-xl font-bold text-gray-800">
                     {formatCurrency(energyBill)}
                   </p>
                 </div>
 
-                <div className="bg-zinc-900 rounded-lg p-3 hover:bg-zinc-900/70 transition-colors duration-300 cursor-default">
-                  <p className="text-gray-300 text-xs mb-1">Economia mensal estimada:</p>
-                  <p className="text-xl font-bold text-yellow-500">
+                <div className="bg-yellow-50 rounded-lg p-3 hover:bg-yellow-100/70 transition-colors duration-300 cursor-default">
+                  <p className="text-gray-600 text-xs mb-1">Economia mensal estimada:</p>
+                  <p className="text-xl font-bold text-yellow-600">
                     {formatCurrency(monthlySavings)}
                   </p>
                 </div>
 
-                <div className="bg-zinc-900 rounded-lg p-3 hover:bg-zinc-900/70 transition-colors duration-300 cursor-default">
-                  <p className="text-gray-300 text-xs mb-1">Estimativa de investimento:</p>
-                  <p className="text-xl font-bold text-yellow-500">
+                <div className="bg-yellow-50 rounded-lg p-3 hover:bg-yellow-100/70 transition-colors duration-300 cursor-default">
+                  <p className="text-gray-600 text-xs mb-1">Estimativa de investimento:</p>
+                  <p className="text-xl font-bold text-yellow-600">
                     {formatCurrency(monthlySavings * 30)}
                   </p>
                 </div>
@@ -251,7 +251,7 @@ function App() {
 
               {/* CTA Button */}
               <div className="mt-4 text-center">
-                <button className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-5 py-2.5 rounded-lg text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/20 inline-flex items-center space-x-2">
+                <button className="bg-yellow-500 hover:bg-yellow-400 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/20 inline-flex items-center space-x-2">
                   <span>Fazer Simulação Detalhada</span>
                   <FaSolarPanel className="text-base transition-transform group-hover:rotate-180" />
                 </button>
@@ -262,16 +262,16 @@ function App() {
       </section>
 
       {/* Diferenciais Section */}
-      <section className="bg-black py-16 md:py-24">
+      <section className="bg-gradient-to-b from-orange-50 to-yellow-50 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 mb-12 text-center">
             Diferenciais da Maxx Sun
           </h2>
           
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Image Column - Hidden on mobile */}
             <div className="hidden lg:block lg:w-1/3">
-              <div className="w-full h-full rounded-xl overflow-hidden">
+              <div className="w-full h-full rounded-xl overflow-hidden shadow-lg">
                 <img 
                   src={solarSunset} 
                   alt="Painéis solares ao pôr do sol" 
@@ -283,53 +283,53 @@ function App() {
             {/* Cards Grid */}
             <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Card 1 */}
-              <div className="bg-zinc-900 rounded-xl p-8 transition-all duration-300 hover:bg-zinc-800 hover:transform hover:-translate-y-1">
+              <div className="bg-white/90 rounded-xl p-8 transition-all duration-300 hover:bg-white hover:transform hover:-translate-y-1 shadow-lg">
                 <div className="text-yellow-500 text-4xl mb-4">
                   <FaSolarPanel />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
                   Equipamentos de ponta
                 </h3>
-                <p className="text-gray-300">
+                <p className="text-gray-600">
                   Trabalhamos apenas com o melhor! Temos inversores com 20 anos de garantia e até 47 anos de vida útil.
                 </p>
               </div>
 
               {/* Card 2 */}
-              <div className="bg-zinc-900 rounded-xl p-8 transition-all duration-300 hover:bg-zinc-800 hover:transform hover:-translate-y-1">
+              <div className="bg-white/90 rounded-xl p-8 transition-all duration-300 hover:bg-white hover:transform hover:-translate-y-1 shadow-lg">
                 <div className="text-yellow-500 text-4xl mb-4">
                   <FaTools />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
                   Time de pós venda especializado
                 </h3>
-                <p className="text-gray-300">
+                <p className="text-gray-600">
                   Temos uma equipe dedicada para o monitoramento da sua usina 24/7.
                 </p>
               </div>
 
               {/* Card 3 */}
-              <div className="bg-zinc-900 rounded-xl p-8 transition-all duration-300 hover:bg-zinc-800 hover:transform hover:-translate-y-1">
+              <div className="bg-white/90 rounded-xl p-8 transition-all duration-300 hover:bg-white hover:transform hover:-translate-y-1 shadow-lg">
                 <div className="text-yellow-500 text-4xl mb-4">
                   <FaMoneyBillWave />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
                   Pagamento Facilitado
                 </h3>
-                <p className="text-gray-300">
+                <p className="text-gray-600">
                   Trabalhamos com as principais instituições de pagamento do Brasil.
                 </p>
               </div>
 
               {/* Card 4 */}
-              <div className="bg-zinc-900 rounded-xl p-8 transition-all duration-300 hover:bg-zinc-800 hover:transform hover:-translate-y-1">
+              <div className="bg-white/90 rounded-xl p-8 transition-all duration-300 hover:bg-white hover:transform hover:-translate-y-1 shadow-lg">
                 <div className="text-yellow-500 text-4xl mb-4">
                   <FaClock />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
                   Entrega ágil
                 </h3>
-                <p className="text-gray-300">
+                <p className="text-gray-600">
                   Nossos fornecedores entregam o seu equipamento com segurança e em tempo recorde.
                 </p>
               </div>
@@ -339,9 +339,9 @@ function App() {
       </section>
 
       {/* Sobre Nós Section */}
-      <section ref={sectionRef} className="bg-zinc-900 py-20">
+      <section ref={sectionRef} className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 mb-16 text-center">
             Sobre Nós
           </h2>
 
@@ -349,27 +349,27 @@ function App() {
             {/* Stats */}
             <div className="w-full lg:w-1/2 grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Projects */}
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
                   {isVisible && <AnimatedNumber end={100} suffix="+" />}
                 </div>
-                <p className="text-gray-300">Projetos Completos</p>
+                <p className="text-gray-600">Projetos Completos</p>
               </div>
 
               {/* Experience */}
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
                   {isVisible && <AnimatedNumber end={7} suffix=" anos" />}
                 </div>
-                <p className="text-gray-300">de Experiência</p>
+                <p className="text-gray-600">de Experiência</p>
               </div>
 
               {/* Solar Panels */}
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
                   {isVisible && <AnimatedNumber end={10000} suffix="+" />}
                 </div>
-                <p className="text-gray-300">Placas Instaladas</p>
+                <p className="text-gray-600">Placas Instaladas</p>
               </div>
             </div>
 
@@ -388,7 +388,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-zinc-900 text-white py-16">
+      <footer className="bg-gradient-to-b from-orange-50 to-yellow-50 text-gray-800 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col items-center text-center">
             {/* Logo */}
@@ -402,13 +402,13 @@ function App() {
             <div className="space-y-4 mb-8">
               <div className="flex items-center justify-center space-x-3">
                 <FaMapMarkerAlt className="text-yellow-500 text-xl" />
-                <p className="text-gray-300">
+                <p className="text-gray-600">
                   Av. Higienópolis, 1080 - Sala 1, Londrina - PR 86020-080
                 </p>
               </div>
               <div className="flex items-center justify-center space-x-3">
                 <FaEnvelope className="text-yellow-500 text-xl" />
-                <a href="mailto:contato@maxxsun.com.br" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                <a href="mailto:contato@maxxsun.com.br" className="text-gray-600 hover:text-yellow-600 transition-colors">
                   contato@maxxsun.com.br
                 </a>
               </div>
@@ -420,24 +420,32 @@ function App() {
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-gray-300 hover:text-yellow-500 transition-colors"
+                className="text-gray-600 hover:text-yellow-600 transition-colors"
               >
                 <FaInstagram className="text-2xl" />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://wa.me/5543999999999" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-gray-300 hover:text-yellow-500 transition-colors"
+                className="text-gray-600 hover:text-yellow-600 transition-colors"
               >
-                <FaGithub className="text-2xl" />
+                <FaWhatsapp className="text-2xl" />
               </a>
             </div>
 
             {/* Copyright */}
-            <div className="pt-8 border-t border-zinc-800">
-              <p className="text-gray-400">
-                © {new Date().getFullYear()} Maxx Sun. Todos os direitos reservados. Feito por Matheus Bicalho Sanches.
+            <div className="pt-8 border-t border-yellow-100">
+              <p className="text-gray-600 flex items-center justify-center gap-2">
+                © {new Date().getFullYear()} Maxx Sun. Todos os direitos reservados. Feito por Matheus Bicalho Sanches
+                <a 
+                  href="https://github.com/matheusbcs" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-600 hover:text-yellow-600 transition-colors"
+                >
+                  <FaGithub className="text-xl" />
+                </a>
               </p>
             </div>
           </div>
