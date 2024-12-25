@@ -35,6 +35,23 @@
   background-image: radial-gradient(circle, #facc15 1px, transparent 1px);
 }
 
+/* Wave Pattern Background */
+.wave-pattern-bg {
+  position: relative;
+}
+
+.wave-pattern-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/wave-pattern.png');
+  background-repeat: repeat;
+  background-size: contain;
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .section-wave {
   position: absolute;
   bottom: 0;

@@ -280,7 +280,7 @@ function App() {
       </section>
 
       {/* Process Timeline Section */}
-      <section className="bg-gradient-to-b from-orange-50 to-yellow-50 py-20">
+      <section className="bg-gradient-to-b from-orange-50 to-yellow-50 py-20 wave-pattern-bg">
         <div className="section-pattern"></div>
         <div className="section-wave"></div>
         <div className="section-content">
@@ -372,48 +372,38 @@ function App() {
       </section>
 
       {/* Sobre Nós Section */}
-      <section ref={sectionRef} className="bg-gradient-to-b from-orange-50 to-yellow-50 py-20 relative">
-        <div className="absolute inset-0 opacity-30">
-          <img 
-            src="/wave-bg.png" 
-            alt="" 
-            className="w-full h-full object-cover"
-            aria-hidden="true"
-          />
-        </div>
-        <div className="relative z-10">
-          <div className="max-w-7xl mx-auto px-4">
-            {/* Sobre Nós Title */}
-            <h2 className="heading-lg section-title text-yellow-600 text-center mb-20">
-              Sobre Nós
-            </h2>
+      <section ref={sectionRef} className="bg-gradient-to-b from-orange-50 to-yellow-50 py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Sobre Nós Title */}
+          <h2 className="heading-lg section-title text-yellow-600 text-center mb-20">
+            Sobre Nós
+          </h2>
 
-            <div className="flex flex-col lg:flex-row items-center gap-12">
-              {/* Stats */}
-              <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Projects */}
-                <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
-                  <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                    {isVisible && <AnimatedNumber end={100} suffix="+" />}
-                  </div>
-                  <p className="text-gray-600">Projetos Completos</p>
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Stats */}
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Projects */}
+              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
+                  {isVisible && <AnimatedNumber end={100} suffix="+" />}
                 </div>
+                <p className="text-gray-600">Projetos Completos</p>
+              </div>
 
-                {/* Experience */}
-                <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
-                  <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                    {isVisible && <AnimatedNumber end={7} suffix=" anos" />}
-                  </div>
-                  <p className="text-gray-600">de Experiência</p>
+              {/* Experience */}
+              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
+                  {isVisible && <AnimatedNumber end={7} suffix=" anos" />}
                 </div>
+                <p className="text-gray-600">de Experiência</p>
+              </div>
 
-                {/* Solar Panels */}
-                <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
-                  <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                    {isVisible && <AnimatedNumber end={10000} suffix="+" />}
-                  </div>
-                  <p className="text-gray-600">Placas Instaladas</p>
+              {/* Solar Panels */}
+              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
+                  {isVisible && <AnimatedNumber end={10000} suffix="+" />}
                 </div>
+                <p className="text-gray-600">Placas Instaladas</p>
               </div>
             </div>
           </div>
@@ -421,44 +411,34 @@ function App() {
       </section>
 
       {/* Founder Section */}
-      <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20 relative">
-        <div className="absolute inset-0 opacity-30">
-          <img 
-            src="/wave-bg.png" 
-            alt="" 
-            className="w-full h-full object-cover"
-            aria-hidden="true"
-          />
-        </div>
-        <div className="relative z-10">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="flex flex-col lg:flex-row items-center gap-12">
-              {/* Founder Image */}
-              <div className="w-full lg:w-1/2">
-                <div className="relative rounded-xl overflow-hidden shadow-lg bg-white p-4 max-w-md mx-auto">
-                  <img 
-                    src="/founder.jpg" 
-                    alt="Fundador da Maxx Sun" 
-                    className="w-full h-auto rounded-lg"
-                  />
-                </div>
+      <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Founder Image */}
+            <div className="w-full lg:w-1/2">
+              <div className="relative rounded-xl overflow-hidden shadow-lg bg-white p-4 max-w-md mx-auto">
+                <img 
+                  src="/founder.jpg" 
+                  alt="Fundador da Maxx Sun" 
+                  className="w-full h-auto rounded-lg"
+                />
               </div>
+            </div>
 
-              {/* Founder Description */}
-              <div className="w-full lg:w-1/2 space-y-6">
-                <h2 className="heading-lg text-yellow-600">
-                  Experiência e Compromisso
-                </h2>
-                <p className="text-body-lg leading-relaxed">
-                  Com mais de 20 anos de experiência no setor elétrico e 7 anos dedicados exclusivamente à energia solar, nosso fundador construiu uma sólida reputação no mercado de Londrina e região.
-                </p>
-                <p className="text-body-lg leading-relaxed">
-                  Sua expertise técnica e compromisso com a qualidade garantem que cada projeto seja executado com excelência, utilizando os melhores equipamentos e seguindo rigorosos padrões de segurança.
-                </p>
-                <p className="text-body-lg leading-relaxed">
-                  Sob sua liderança, a Maxx Sun já realizou mais de 100 projetos bem-sucedidos, contribuindo para a economia e sustentabilidade de residências, comércios e indústrias da região.
-                </p>
-              </div>
+            {/* Founder Description */}
+            <div className="w-full lg:w-1/2 space-y-6">
+              <h2 className="heading-lg text-yellow-600">
+                Experiência e Compromisso
+              </h2>
+              <p className="text-body-lg leading-relaxed">
+                Com mais de 20 anos de experiência no setor elétrico e 7 anos dedicados exclusivamente à energia solar, nosso fundador construiu uma sólida reputação no mercado de Londrina e região.
+              </p>
+              <p className="text-body-lg leading-relaxed">
+                Sua expertise técnica e compromisso com a qualidade garantem que cada projeto seja executado com excelência, utilizando os melhores equipamentos e seguindo rigorosos padrões de segurança.
+              </p>
+              <p className="text-body-lg leading-relaxed">
+                Sob sua liderança, a Maxx Sun já realizou mais de 100 projetos bem-sucedidos, contribuindo para a economia e sustentabilidade de residências, comércios e indústrias da região.
+              </p>
             </div>
           </div>
         </div>
