@@ -284,7 +284,6 @@ function App() {
 
       {/* Process Timeline Section */}
       <section className="bg-gradient-to-b from-orange-50 to-yellow-50 py-20 wave-pattern-bg">
-        <div className="section-pattern"></div>
         <div className="section-wave"></div>
         <div className="section-content">
           <div className="max-w-5xl mx-auto px-4">
