@@ -1,5 +1,6 @@
 import logo from './assets/images/logo.png'
 import solarSunset from './assets/images/solar-sunset.jpg'
+import founder from './assets/images/founder.jpg'
 import { FaSolarPanel, FaTools, FaClock, FaMoneyBillWave, FaMapMarkerAlt, FaEnvelope, FaInstagram, FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { useState, useEffect, useRef } from 'react'
 
@@ -418,7 +419,7 @@ function App() {
             <div className="w-full lg:w-1/2">
               <div className="relative rounded-xl overflow-hidden shadow-lg bg-white p-4 max-w-md mx-auto">
                 <img 
-                  src="/founder.jpg" 
+                  src={founder} 
                   alt="Fundador da Maxx Sun" 
                   className="w-full h-auto rounded-lg"
                 />
