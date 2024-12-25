@@ -119,16 +119,22 @@ function App() {
               Reduza sua conta de energia em até 95% com nossas soluções em energia solar. 
               Investimento inteligente com retorno de até 1,8% ao mês.
             </p>
-            <div className="flex justify-center">
-              <button className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
-                Solicitar Orçamento GRATUITAMENTE
-              </button>
+            <div className="flex justify-center gap-4">
+              <a 
+                href="https://wa.me/5543999999999" 
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="bg-green-600 hover:bg-green-500 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105 flex items-center gap-2"
+              >
+                <FaWhatsapp className="text-2xl" />
+                Solicitar Orçamento GRATUITO
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Savings Calculator Section */}
+      {/* Calculator Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-12">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-yellow-600 mb-8 text-center">
@@ -253,10 +259,224 @@ function App() {
 
               {/* CTA Button */}
               <div className="mt-4 text-center">
-                <button className="bg-yellow-500 hover:bg-yellow-400 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/20 inline-flex items-center space-x-2">
+                <a 
+                  href="https://wa.me/5543999999999?text=Olá! Gostaria de uma simulação detalhada para energia solar." 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-600 hover:bg-green-500 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 inline-flex items-center space-x-2"
+                >
+                  <FaWhatsapp className="text-lg" />
                   <span>Fazer Simulação Detalhada</span>
-                  <FaSolarPanel className="text-base transition-transform group-hover:rotate-180" />
-                </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Timeline Section */}
+      <section className="bg-gradient-to-b from-orange-50 to-yellow-50 py-20">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 mb-16 text-center">
+            Como Funciona
+          </h2>
+
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-[15px] md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-yellow-200"></div>
+
+            {/* Step 1 */}
+            <div className="relative flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24">
+              <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Contato Inicial</h3>
+                <p className="text-gray-600">Entre em contato via WhatsApp ou formulário. Nossa equipe responderá rapidamente para entender suas necessidades.</p>
+              </div>
+              <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <span className="text-white font-bold">1</span>
+              </div>
+              <div className="flex-1 md:pl-12 hidden md:block"></div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24">
+              <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
+              <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <span className="text-white font-bold">2</span>
+              </div>
+              <div className="flex-1 md:pl-12 mb-4 md:mb-0">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Análise de Consumo</h3>
+                <p className="text-gray-600">Envie sua conta de energia. Nossa equipe técnica fará uma análise detalhada para dimensionar o sistema ideal.</p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24">
+              <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Visita Técnica</h3>
+                <p className="text-gray-600">Agendamos uma visita para avaliar o local, confirmar medidas e discutir os detalhes do projeto pessoalmente.</p>
+              </div>
+              <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <span className="text-white font-bold">3</span>
+              </div>
+              <div className="flex-1 md:pl-12 hidden md:block"></div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="relative flex flex-col md:flex-row items-center md:justify-between mb-16 md:mb-24">
+              <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
+              <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <span className="text-white font-bold">4</span>
+              </div>
+              <div className="flex-1 md:pl-12 mb-4 md:mb-0">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Proposta e Contrato</h3>
+                <p className="text-gray-600">Apresentamos a proposta detalhada com todas as especificações técnicas e condições comerciais para sua aprovação.</p>
+              </div>
+            </div>
+
+            {/* Step 5 */}
+            <div className="relative flex flex-col md:flex-row items-center md:justify-between">
+              <div className="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Instalação</h3>
+                <p className="text-gray-600">Após a aprovação, agendamos a instalação que é realizada em aproximadamente 15 dias por nossa equipe especializada.</p>
+              </div>
+              <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+                <span className="text-white font-bold">5</span>
+              </div>
+              <div className="flex-1 md:pl-12 hidden md:block"></div>
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="mt-16 text-center">
+            <a 
+              href="https://wa.me/5543999999999?text=Olá! Gostaria de saber mais sobre o processo de instalação de energia solar." 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 hover:bg-green-500 text-white font-semibold px-8 py-4 rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20"
+            >
+              <FaWhatsapp className="text-2xl" />
+              <span>Iniciar Processo Agora</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Sobre Nós Section */}
+      <section ref={sectionRef} className="bg-gradient-to-b from-orange-50 to-yellow-50 py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 mb-16 text-center">
+            Sobre Nós
+          </h2>
+
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Stats */}
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Projects */}
+              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
+                  {isVisible && <AnimatedNumber end={100} suffix="+" />}
+                </div>
+                <p className="text-gray-600">Projetos Completos</p>
+              </div>
+
+              {/* Experience */}
+              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
+                  {isVisible && <AnimatedNumber end={7} suffix=" anos" />}
+                </div>
+                <p className="text-gray-600">de Experiência</p>
+              </div>
+
+              {/* Solar Panels */}
+              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
+                  {isVisible && <AnimatedNumber end={10000} suffix="+" />}
+                </div>
+                <p className="text-gray-600">Placas Instaladas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Founder Image */}
+            <div className="w-full lg:w-1/2">
+              <div className="relative rounded-xl overflow-hidden shadow-lg bg-white p-4 max-w-md mx-auto">
+                <img 
+                  src="/founder.jpg" 
+                  alt="Fundador da Maxx Sun" 
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* Founder Description */}
+            <div className="w-full lg:w-1/2 space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-yellow-600">
+                Experiência e Compromisso
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Com mais de 20 anos de experiência no setor elétrico e 7 anos dedicados exclusivamente à energia solar, nosso fundador construiu uma sólida reputação no mercado de Londrina e região.
+              </p>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Sua expertise técnica e compromisso com a qualidade garantem que cada projeto seja executado com excelência, utilizando os melhores equipamentos e seguindo rigorosos padrões de segurança.
+              </p>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Sob sua liderança, a Maxx Sun já realizou mais de 100 projetos bem-sucedidos, contribuindo para a economia e sustentabilidade de residências, comércios e indústrias da região.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projetos Realizados Section */}
+      <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 mb-16 text-center">
+            Confira Projetos Realizados - Placa Solar Londrina
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Project 1 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg bg-white">
+              <img 
+                src="/Foto1.jpeg" 
+                alt="Pousada Vollweiter" 
+                className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Pousada Vollweiter</h3>
+                <p className="text-gray-600">Energia solar comercial</p>
+              </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg bg-white">
+              <img 
+                src="/Foto2.jpeg" 
+                alt="Avibraz" 
+                className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Avibraz</h3>
+                <p className="text-gray-600">Energia solar para indústrias</p>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg bg-white">
+              <img 
+                src="/Foto3.jpeg" 
+                alt="Marcelo Sossella" 
+                className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Marcelo Sossella</h3>
+                <p className="text-gray-600">Energia Solar Residencial</p>
               </div>
             </div>
           </div>
@@ -340,46 +560,83 @@ function App() {
         </div>
       </section>
 
-      {/* Sobre Nós Section */}
-      <section ref={sectionRef} className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* FAQ Section */}
+      <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
+        <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 mb-16 text-center">
-            Sobre Nós
+            Perguntas Frequentes
           </h2>
 
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Stats */}
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Projects */}
-              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
-                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                  {isVisible && <AnimatedNumber end={100} suffix="+" />}
-                </div>
-                <p className="text-gray-600">Projetos Completos</p>
-              </div>
+          <div className="space-y-6">
+            {/* Question 1 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                Quanto tempo dura um sistema de energia solar?
+              </h3>
+              <p className="text-gray-600">
+                Os painéis solares têm vida útil de 25 anos ou mais, mantendo eficiência acima de 80%. Os inversores têm garantia de até 20 anos, sendo um investimento duradouro e confiável.
+              </p>
+            </div>
 
-              {/* Experience */}
-              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
-                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                  {isVisible && <AnimatedNumber end={7} suffix=" anos" />}
-                </div>
-                <p className="text-gray-600">de Experiência</p>
-              </div>
+            {/* Question 2 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                Em quanto tempo terei retorno do investimento?
+              </h3>
+              <p className="text-gray-600">
+                O payback médio é de 3 a 5 anos, dependendo do consumo e da tarifa de energia. Após esse período, você terá economia por mais de 20 anos.
+              </p>
+            </div>
 
-              {/* Solar Panels */}
-              <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
-                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                  {isVisible && <AnimatedNumber end={10000} suffix="+" />}
-                </div>
-                <p className="text-gray-600">Placas Instaladas</p>
-              </div>
+            {/* Question 3 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                Preciso fazer obras para instalar energia solar?
+              </h3>
+              <p className="text-gray-600">
+                Não são necessárias grandes obras. A instalação é rápida e limpa, geralmente levando de 2 a 3 dias, sem interferir na estrutura da sua casa ou empresa.
+              </p>
+            </div>
+
+            {/* Question 4 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                Como funciona em dias nublados ou chuvosos?
+              </h3>
+              <p className="text-gray-600">
+                O sistema continua gerando energia mesmo em dias nublados, apenas com eficiência reduzida. O dimensionamento já considera essas variações climáticas para garantir sua economia.
+              </p>
+            </div>
+
+            {/* Question 5 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                Qual manutenção é necessária?
+              </h3>
+              <p className="text-gray-600">
+                A manutenção é mínima, consistindo principalmente na limpeza dos painéis a cada 6-12 meses. Nosso sistema de monitoramento 24/7 garante o máximo desempenho.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* FAQ CTA */}
+      <div className="mt-12 text-center">
+        <p className="text-gray-600 mb-4">Ainda tem dúvidas? Fale com nossos especialistas!</p>
+        <a 
+          href="https://wa.me/5543999999999?text=Olá! Gostaria de tirar algumas dúvidas sobre energia solar." 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20"
+        >
+          <FaWhatsapp className="text-xl" />
+          <span>Falar com Especialista</span>
+        </a>
+      </div>
+
       {/* Footer */}
-      <footer className="bg-gradient-to-b from-orange-50 to-yellow-50 text-gray-800 py-16">
+      <footer className="bg-gradient-to-b from-yellow-50 to-orange-50 text-gray-800 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col items-center text-center">
             {/* Logo */}
