@@ -415,33 +415,20 @@ function App() {
       {/* Founder Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Founder Image */}
-            <div className="w-full lg:w-1/2">
-              <div className="relative rounded-xl overflow-hidden shadow-lg bg-white p-4 max-w-md mx-auto">
-                <img 
-                  src={founder} 
-                  alt="Fundador da Maxx Sun" 
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-            </div>
-
-            {/* Founder Description */}
-            <div className="w-full lg:w-1/2 space-y-6">
-              <h2 className="heading-lg text-yellow-600">
-                Experiência e Compromisso
-              </h2>
-              <p className="text-body-lg leading-relaxed">
-                Com mais de 20 anos de experiência no setor elétrico e 7 anos dedicados exclusivamente à energia solar, nosso fundador construiu uma sólida reputação no mercado de Londrina e região.
-              </p>
-              <p className="text-body-lg leading-relaxed">
-                Sua expertise técnica e compromisso com a qualidade garantem que cada projeto seja executado com excelência, utilizando os melhores equipamentos e seguindo rigorosos padrões de segurança.
-              </p>
-              <p className="text-body-lg leading-relaxed">
-                Sob sua liderança, a Maxx Sun já realizou mais de 100 projetos bem-sucedidos, contribuindo para a economia e sustentabilidade de residências, comércios e indústrias da região.
-              </p>
-            </div>
+          {/* Founder Description */}
+          <div className="w-full space-y-6">
+            <h2 className="heading-lg section-title text-yellow-600 text-center mb-20">
+              Experiência e Compromisso
+            </h2>
+            <p className="text-body-lg leading-relaxed">
+              Com mais de 20 anos de experiência no setor elétrico e 7 anos dedicados exclusivamente à energia solar, nosso fundador construiu uma sólida reputação no mercado de Londrina e região.
+            </p>
+            <p className="text-body-lg leading-relaxed">
+              Sua expertise técnica e compromisso com a qualidade garantem que cada projeto seja executado com excelência, utilizando os melhores equipamentos e seguindo rigorosos padrões de segurança. Trabalhamos com os principais inversores do mercado: Sungrow, Solis, Sofar, Weg, Growatt, Edeltec e Nexen.
+            </p>
+            <p className="text-body-lg leading-relaxed">
+              Sob sua liderança, a Maxx Sun já realizou mais de 100 projetos bem-sucedidos, contribuindo para a economia e sustentabilidade de residências, comércios e indústrias da região.
+            </p>
           </div>
         </div>
       </section>
