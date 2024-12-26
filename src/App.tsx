@@ -347,7 +347,7 @@ function App() {
               <div className="relative flex flex-col md:flex-row items-start md:items-center md:justify-between pl-12 md:pl-0">
                 <div className="flex-1 md:text-right md:pr-12">
                   <h3 className="heading-md text-gray-800 mb-2">Instalação</h3>
-                  <p className="text-body">Após a aprovação, agendamos a instalação que é realizada em aproximadamente 15 dias por nossa equipe especializada.</p>
+                  <p className="text-body">Após a aprovação, agendamos a instalação que é realizada em aproximadamente 30 dias por nossa equipe especializada.</p>
                 </div>
                 <div className="absolute left-0 md:left-1/2 top-0 md:top-1/2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center z-10 md:-translate-x-1/2 md:-translate-y-1/2 shadow-lg">
                   <span className="text-white font-bold">5</span>
@@ -394,7 +394,7 @@ function App() {
               {/* Experience */}
               <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
                 <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                  {isVisible && <AnimatedNumber end={7} suffix=" anos" />}
+                  {isVisible && <AnimatedNumber end={2} suffix=" anos" />}
                 </div>
                 <p className="text-gray-600">de Experiência</p>
               </div>
@@ -402,7 +402,7 @@ function App() {
               {/* Solar Panels */}
               <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
                 <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                  {isVisible && <AnimatedNumber end={10000} suffix="+" />}
+                  {isVisible && <AnimatedNumber end={1000} suffix="+" />}
                 </div>
                 <p className="text-gray-600">Placas Instaladas</p>
               </div>
@@ -420,7 +420,7 @@ function App() {
               Experiência e Compromisso
             </h2>
             <p className="text-body-lg leading-relaxed">
-              Com mais de 20 anos de experiência no setor elétrico e 7 anos dedicados exclusivamente à energia solar, nosso fundador construiu uma sólida reputação no mercado de Londrina e região.
+              Atuando no setor de forma exclusiva, nosso fundador construiu uma sólida reputação no mercado de Londrina e região.
             </p>
             <p className="text-body-lg leading-relaxed">
               Sua expertise técnica e compromisso com a qualidade garantem que cada projeto seja executado com excelência, utilizando os melhores equipamentos e seguindo rigorosos padrões de segurança. Trabalhamos com os principais inversores do mercado: Sungrow, Solis, Sofar, Weg, Growatt, Edeltec e Nexen.
@@ -559,7 +559,7 @@ function App() {
                     Entrega e instalação rápida
                   </h3>
                   <p className="text-body">
-                    Comece a economizar em sua conta de luz em aproximadamente 15 dias
+                    Comece a economizar em sua conta de luz em aproximadamente 30 dias
                   </p>
                 </div>
               </div>
