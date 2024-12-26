@@ -1,24 +1,224 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+/* Base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Custom Typography */
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  section {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
+/* Section Backgrounds */
+.section-pattern {
+  position: absolute;
+  inset: 0;
+  background-size: 30px 30px;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+  background-image: radial-gradient(circle, #facc15 1px, transparent 1px);
+}
+
+/* Wave Pattern Background */
+.wave-pattern-bg {
+  position: relative;
+}
+
+.wave-pattern-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/wave-pattern.png');
+  background-repeat: repeat;
+  background-size: contain;
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+  display: none; /* Hide by default on mobile */
+}
+
+/* Show wave pattern only on desktop */
+@media (min-width: 1024px) {
+  .wave-pattern-bg::before {
+    display: block;
+  }
+}
+
+.section-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(45deg, transparent 33.33%, #fff 33.33%, #fff 66.66%, transparent 66.66%);
+  background-size: 30px 30px;
+  opacity: 0.1;
+}
+
+/* Content Container */
+.section-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Enhanced Section Titles */
+.section-title {
+  @apply relative inline-block text-2xl md:text-3xl lg:text-4xl font-bold;
+  margin-bottom: 1rem;
+}
+
+.section-title::before {
+  content: '';
+  @apply absolute -left-4 -right-4 top-1/2 -bottom-2 bg-yellow-100/50 -z-10 rounded-lg transform -rotate-1;
+}
+
+.section-title::after {
+  content: '';
+  @apply absolute -bottom-2 left-0 right-0 h-1 bg-yellow-500 rounded-full;
   width: 100%;
-  overflow-x: hidden;
+  transform: none;
+  translate: none;
 }
 
-/* Logo outline effect */
+/* Card Hover Effects */
+.hover-card {
+  @apply transition-all duration-300;
+  transform: perspective(1000px) rotateX(0) rotateY(0);
+  transform-style: preserve-3d;
+}
+
+.hover-card:hover {
+  transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
+  box-shadow: 
+    0 20px 40px -15px rgba(0,0,0,0.1),
+    0 0 20px rgba(250, 204, 21, 0.1);
+}
+
+/* Scroll Reveal Animation */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-on-scroll {
+  animation: revealUp 0.8s ease-out forwards;
+}
+
+/* Enhanced Hero Title Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  animation: fadeInUp 0.8s ease-out;
+  position: relative;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+.hero-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #facc15, transparent);
+  animation: expandWidth 1.2s ease-out forwards;
+}
+
+@keyframes expandWidth {
+  from { width: 0; }
+  to { width: 100px; }
+}
+
+/* Timeline Enhancements */
+.timeline-line {
+  position: relative;
+}
+
+.timeline-line::before {
+  content: '';
+  @apply absolute left-[15px] md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-200;
+}
+
+/* Card Decorations */
+.card-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at top right, rgba(250, 204, 21, 0.1), transparent 70%);
+  pointer-events: none;
+}
+
+/* Enhanced Slider Styles */
+input[type="range"] {
+  @apply w-full h-2 bg-gradient-to-r from-yellow-100 via-yellow-300 to-yellow-100 rounded-lg appearance-none cursor-pointer;
+  position: relative;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply w-6 h-6 bg-yellow-500 rounded-full appearance-none cursor-pointer transition-all duration-200 hover:bg-yellow-400 hover:scale-110;
+  -webkit-appearance: none;
+  box-shadow: 
+    0 0 0 4px rgba(250, 204, 21, 0.1),
+    0 0 0 8px rgba(250, 204, 21, 0.05);
+}
+
+/* Enhanced Logo Glow */
 .logo-outline {
-  filter: drop-shadow(0 0 0.75px white)
-         drop-shadow(0 0 0.75px white);
+  filter: 
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))
+    drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+  transition: filter 0.3s ease;
+}
+
+.logo-outline:hover {
+  filter: 
+    drop-shadow(0 0 15px rgba(255, 255, 255, 0.4))
+    drop-shadow(0 0 30px rgba(255, 255, 255, 0.3));
 }
