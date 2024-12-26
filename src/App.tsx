@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from 'react'
 
 function App() {
   const [energyBill, setEnergyBill] = useState(400)
-  const monthlySavings = energyBill * 0.5 // 50% savings
+  const monthlySavings = energyBill * 0.9 // 90% savings
 
   const formatCurrency = (value: number) => {
     return value.toLocaleString('pt-BR', {
@@ -119,12 +119,11 @@ function App() {
               Transforme o Sol em Economia com a Maxx Sun
             </h1>
             <p className="text-body-lg mb-8 text-gray-100">
-              Reduza sua conta de energia em até 95% com nossas soluções em energia solar. 
-              Investimento inteligente com retorno de até 1,8% ao mês.
+              Reduza sua conta de energia em até 90% com nossas soluções em energia solar. Investimento inteligente com retorno de até 1,8% ao mês.
             </p>
             <div className="flex justify-center gap-4">
               <a 
-                href="https://wa.me/5543999999999" 
+                href="https://wa.me/5543999030190" 
                 target="_blank"
                 rel="noopener noreferrer" 
                 className="bg-green-600 hover:bg-green-500 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105 flex items-center gap-2"
@@ -266,7 +265,7 @@ function App() {
                 {/* CTA Button */}
                 <div className="mt-4 text-center">
                   <a 
-                    href="https://wa.me/5543999999999?text=Olá! Gostaria de uma simulação detalhada para energia solar." 
+                    href="https://wa.me/5543999030190?text=Olá! Gostaria de uma simulação detalhada para energia solar." 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-600 hover:bg-green-500 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 inline-flex items-center space-x-2"
@@ -359,7 +358,7 @@ function App() {
             {/* CTA Button */}
             <div className="mt-16 text-center">
               <a 
-                href="https://wa.me/5543999999999?text=Olá! Gostaria de saber mais sobre o processo de instalação de energia solar." 
+                href="https://wa.me/5543999030190?text=Olá! Gostaria de saber mais sobre o processo de instalação de energia solar." 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-500 text-white font-semibold px-8 py-4 rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20"
@@ -638,7 +637,7 @@ function App() {
       <div className="mt-12 text-center mb-20">
         <p className="text-gray-600 mb-4">Ainda tem dúvidas? Fale com nossos especialistas!</p>
         <a 
-          href="https://wa.me/5543999999999?text=Olá! Gostaria de tirar algumas dúvidas sobre energia solar." 
+          href="https://wa.me/5543999030190?text=Olá! Gostaria de tirar algumas dúvidas sobre energia solar." 
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20"
@@ -666,13 +665,13 @@ function App() {
               <div className="flex items-center justify-center space-x-3">
                 <FaMapMarkerAlt className="text-yellow-500 text-xl" />
                 <p className="text-gray-600">
-                  Av. Higienópolis, 1080 - Sala 1, Londrina - PR 86020-080
+                  Rua Espírito Santo 1806 sl.706, Londrina - PR 86020-420
                 </p>
               </div>
               <div className="flex items-center justify-center space-x-3">
                 <FaEnvelope className="text-yellow-500 text-xl" />
-                <a href="mailto:contato@maxxsun.com.br" className="text-gray-600 hover:text-yellow-600 transition-colors">
-                  contato@maxxsun.com.br
+                <a href="mailto:edsontadeumello@gmail.com" className="text-gray-600 hover:text-yellow-600 transition-colors">
+                  edsontadeumello@gmail.com
                 </a>
               </div>
             </div>
@@ -688,7 +687,7 @@ function App() {
                 <FaInstagram className="text-2xl" />
               </a>
               <a 
-                href="https://wa.me/5543999999999" 
+                href="https://wa.me/5543999030190" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-600 hover:text-yellow-600 transition-colors"
