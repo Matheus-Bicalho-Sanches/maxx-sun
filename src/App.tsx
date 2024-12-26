@@ -99,7 +99,7 @@ function App() {
         {/* Content Container */}
         <div className="relative h-full w-full flex flex-col justify-center items-center px-4">
           {/* Logo */}
-          <div className="mb-20">
+          <div className="mb-12">
             <div className="relative">
               {/* Glowing circle background */}
               <div className="absolute inset-0 rounded-full bg-white/10 blur-xl transform scale-150"></div>
