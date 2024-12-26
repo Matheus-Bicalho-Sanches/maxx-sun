@@ -1,6 +1,5 @@
 import logo from './assets/images/logo.png'
 import solarSunset from './assets/images/solar-sunset.jpg'
-import founder from './assets/images/founder.jpg'
 import { FaSolarPanel, FaTools, FaClock, FaMoneyBillWave, FaMapMarkerAlt, FaEnvelope, FaInstagram, FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { useState, useEffect, useRef } from 'react'
 
