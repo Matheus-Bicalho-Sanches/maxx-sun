@@ -437,7 +437,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4">
           {/* Projects Section Title */}
           <h2 className="heading-lg section-title text-yellow-600 text-center mb-20">
-            Confira Projetos Realizados
+            Projetos já Realizados
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -446,11 +446,10 @@ function App() {
               <div className="card-decoration"></div>
               <img 
                 src="/Foto1.jpeg" 
-                alt="Pousada Vollweiter" 
+                alt="Projeto Comercial" 
                 className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Pousada Vollweiter</h3>
                 <p className="text-gray-600">Energia solar comercial</p>
               </div>
             </div>
@@ -460,11 +459,10 @@ function App() {
               <div className="card-decoration"></div>
               <img 
                 src="/Foto2.jpeg" 
-                alt="Avibraz" 
+                alt="Projeto Rural" 
                 className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Avibraz</h3>
                 <p className="text-gray-600">Energia solar em zonas rurais</p>
               </div>
             </div>
@@ -474,11 +472,10 @@ function App() {
               <div className="card-decoration"></div>
               <img 
                 src="/Foto3.jpeg" 
-                alt="Marcelo Sossella" 
+                alt="Projeto Residencial" 
                 className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Marcelo Sossella</h3>
                 <p className="text-gray-600">Energia Solar Residencial</p>
               </div>
             </div>
