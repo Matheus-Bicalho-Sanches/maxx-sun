@@ -638,7 +638,7 @@ function App() {
       </section>
 
       {/* FAQ CTA */}
-      <div className="mt-12 text-center">
+      <div className="mt-12 text-center mb-20">
         <p className="text-gray-600 mb-4">Ainda tem dúvidas? Fale com nossos especialistas!</p>
         <a 
           href="https://wa.me/5543999999999?text=Olá! Gostaria de tirar algumas dúvidas sobre energia solar." 
