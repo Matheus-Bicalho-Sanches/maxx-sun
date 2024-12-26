@@ -97,7 +97,7 @@ function App() {
         <div className="absolute inset-0 bg-black/40"></div>
         
         {/* Logo */}
-        <div className="absolute top-4 left-4 lg:left-8 z-10">
+        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 z-10">
           <div className="relative">
             {/* Glowing circle background */}
             <div className="absolute inset-0 rounded-full bg-white/10 blur-xl transform scale-150"></div>
