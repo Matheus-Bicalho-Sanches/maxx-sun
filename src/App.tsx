@@ -96,24 +96,25 @@ function App() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
         
-        {/* Logo */}
-        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 z-10">
-          <div className="relative">
-            {/* Glowing circle background */}
-            <div className="absolute inset-0 rounded-full bg-white/10 blur-xl transform scale-150"></div>
-            <div className="rounded-full overflow-hidden bg-white/5 backdrop-blur-sm">
-              <img 
-                src={logo} 
-                alt="Maxx Sun Logo" 
-                className="h-24 md:h-28 lg:h-40 w-auto logo-outline relative aspect-square object-cover" 
-              />
+        {/* Content Container */}
+        <div className="relative h-full w-full flex flex-col justify-center items-center px-4">
+          {/* Logo */}
+          <div className="mb-20">
+            <div className="relative">
+              {/* Glowing circle background */}
+              <div className="absolute inset-0 rounded-full bg-white/10 blur-xl transform scale-150"></div>
+              <div className="rounded-full overflow-hidden bg-white/5 backdrop-blur-sm">
+                <img 
+                  src={logo} 
+                  alt="Maxx Sun Logo" 
+                  className="h-24 md:h-28 lg:h-40 w-auto logo-outline relative aspect-square object-cover" 
+                />
+              </div>
             </div>
           </div>
-        </div>
-        
-        {/* Content */}
-        <div className="relative h-full w-full px-4 flex items-center">
-          <div className="max-w-3xl mx-auto">
+          
+          {/* Text Content */}
+          <div className="max-w-3xl text-center">
             {/* Hero Content */}
             <h1 className="heading-xl hero-title text-white mb-6">
               Transforme o Sol em Economia com a Maxx Sun
