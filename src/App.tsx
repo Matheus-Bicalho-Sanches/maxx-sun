@@ -100,14 +100,14 @@ function App() {
         <div className="relative h-full w-full flex flex-col justify-center items-center px-4">
           {/* Logo */}
           <div className="mb-12">
-            <div className="relative">
+            <div className="relative w-24 md:w-28 lg:w-40 aspect-square">
               {/* Glowing circle background */}
               <div className="absolute inset-0 rounded-full bg-white/10 blur-xl transform scale-150"></div>
-              <div className="rounded-full overflow-hidden bg-white/5 backdrop-blur-sm">
+              <div className="rounded-full overflow-hidden bg-white/5 backdrop-blur-sm w-full h-full">
                 <img 
                   src={logo} 
                   alt="Maxx Sun Logo" 
-                  className="h-24 md:h-28 lg:h-40 w-auto logo-outline relative aspect-square object-cover" 
+                  className="w-full h-full object-cover rounded-full" 
                 />
               </div>
             </div>
