@@ -258,7 +258,7 @@ function App() {
                   <div className="bg-yellow-50 rounded-lg p-3 hover:bg-yellow-100/70 transition-colors duration-300 cursor-default">
                     <p className="text-gray-600 text-xs mb-1">Estimativa de investimento:</p>
                     <p className="text-xl font-bold text-yellow-600">
-                      {formatCurrency(monthlySavings * 30)}
+                      A partir de R$ 7.000,00
                     </p>
                   </div>
                 </div>
@@ -373,7 +373,7 @@ function App() {
       </section>
 
       {/* Sobre Nós Section */}
-      <section ref={sectionRef} className="bg-gradient-to-b from-orange-50 to-yellow-50 py-20">
+      <section ref={sectionRef} className="bg-gradient-to-b from-orange-100 to-yellow-100 py-20">
         <div className="max-w-7xl mx-auto px-4">
           {/* Sobre Nós Title */}
           <h2 className="heading-lg section-title text-yellow-600 text-center mb-20">
@@ -412,7 +412,7 @@ function App() {
       </section>
 
       {/* Founder Section */}
-      <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-20">
+      <section className="bg-gradient-to-b from-yellow-100 to-orange-100 py-20">
         <div className="max-w-7xl mx-auto px-4">
           {/* Founder Description */}
           <div className="w-full space-y-6">
