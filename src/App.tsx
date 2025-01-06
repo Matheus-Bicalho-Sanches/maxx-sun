@@ -517,7 +517,7 @@ function App() {
                   Equipamentos de ponta
                 </h3>
                   <p className="text-body">
-                  Trabalhamos apenas com o melhor! Temos inversores com 20 anos de garantia e até 47 anos de vida útil.
+                  Trabalhamos apenas com o melhor! Temos inversores com 12 anos de garantia e até 47 anos de vida útil.
                 </p>
               </div>
 
@@ -586,7 +586,7 @@ function App() {
                   Quanto tempo dura um sistema de energia solar?
                 </h3>
                 <p className="text-body">
-                  Os painéis solares têm vida útil de 25 anos ou mais, mantendo eficiência acima de 80%. Os inversores têm garantia de até 20 anos, sendo um investimento duradouro e confiável.
+                  Os painéis solares têm vida útil de 12 anos ou mais, mantendo eficiência acima de 80%. Os inversores têm garantia de até 12 anos, sendo um investimento duradouro e confiável.
                 </p>
               </div>
 
@@ -673,6 +673,12 @@ function App() {
                 <FaEnvelope className="text-yellow-500 text-xl" />
                 <a href="mailto:edsontadeumello@gmail.com" className="text-gray-600 hover:text-yellow-600 transition-colors">
                   edsontadeumello@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center justify-center space-x-3">
+                <FaWhatsapp className="text-yellow-500 text-xl" />
+                <a href="tel:+5543999030190" className="text-gray-600 hover:text-yellow-600 transition-colors">
+                  (43) 99903-0190
                 </a>
               </div>
             </div>
