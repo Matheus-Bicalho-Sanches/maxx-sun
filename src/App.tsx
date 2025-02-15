@@ -426,7 +426,7 @@ function App() {
               {/* Experience */}
               <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
                 <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                  {isVisible && <AnimatedNumber end={2} suffix=" anos" />}
+                  {isVisible && <AnimatedNumber end={9} suffix=" anos" />}
                 </div>
                 <p className="text-gray-600">de Experiência</p>
               </div>
