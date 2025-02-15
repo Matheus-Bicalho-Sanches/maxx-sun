@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maxx-sun.vercel.app/sitemap.xml 

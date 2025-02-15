@@ -71,9 +71,12 @@ function App() {
   }
 
   return (
-    <main className="w-full min-h-screen">
+    <main className="w-full min-h-screen" role="main" itemScope itemType="http://schema.org/WebSite">
+      <meta itemProp="name" content="Maxx Sun - Energia Solar em Londrina e Região" />
+      <meta itemProp="description" content="Especialistas em instalação de energia solar em Londrina e região. Reduza sua conta de energia em até 90% com soluções personalizadas." />
+
       {/* Hero Section */}
-      <section className="relative w-full h-screen">
+      <section className="relative w-full h-screen" role="banner">
         {/* Video Background */}
         <div className="absolute inset-0 overflow-hidden bg-black">
           <video 
@@ -137,6 +140,32 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Organization Schema */}
+      <div itemScope itemType="http://schema.org/Organization" style={{ display: 'none' }}>
+        <meta itemProp="name" content="Maxx Sun" />
+        <meta itemProp="description" content="Empresa especializada em instalação de energia solar em Londrina e região." />
+        <meta itemProp="email" content="edsontadeumello@gmail.com" />
+        <meta itemProp="telephone" content="+5543996548091" />
+        <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+          <meta itemProp="streetAddress" content="Rua Espírito Santo 1806 sl.706" />
+          <meta itemProp="addressLocality" content="Londrina" />
+          <meta itemProp="addressRegion" content="PR" />
+          <meta itemProp="postalCode" content="86020-420" />
+          <meta itemProp="addressCountry" content="BR" />
+        </div>
+      </div>
+
+      {/* Local Business Schema */}
+      <div itemScope itemType="http://schema.org/LocalBusiness" style={{ display: 'none' }}>
+        <meta itemProp="name" content="Maxx Sun" />
+        <meta itemProp="image" content="/logo.png" />
+        <meta itemProp="priceRange" content="R$ 7.000 - R$ 100.000" />
+        <div itemProp="geo" itemScope itemType="http://schema.org/GeoCoordinates">
+          <meta itemProp="latitude" content="-23.311288" />
+          <meta itemProp="longitude" content="-51.169726" />
+        </div>
+      </div>
 
       {/* Calculator Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-orange-50 py-12">
