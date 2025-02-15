@@ -123,8 +123,9 @@ function App() {
               Reduza sua conta de energia em até 90% com nossas soluções em energia solar. Investimento inteligente com retorno de até 1,8% ao mês.
             </p>
             <div className="flex justify-center gap-4">
+              {/* Hero CTA Button */}
               <a 
-                href="https://wa.me/5543999030190" 
+                href="https://wa.me/5543996548091" 
                 target="_blank"
                 rel="noopener noreferrer" 
                 className="bg-green-600 hover:bg-green-500 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105 flex items-center gap-2"
@@ -265,8 +266,9 @@ function App() {
 
                 {/* CTA Button */}
                 <div className="mt-4 text-center">
+                  {/* Calculator CTA Button */}
                   <a 
-                    href="https://wa.me/5543999030190?text=Olá! Gostaria de uma simulação detalhada para energia solar." 
+                    href="https://wa.me/5543996548091?text=Olá! Gostaria de uma simulação detalhada para energia solar." 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-600 hover:bg-green-500 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 inline-flex items-center space-x-2"
@@ -358,8 +360,9 @@ function App() {
 
             {/* CTA Button */}
             <div className="mt-16 text-center">
+              {/* Timeline CTA Button */}
               <a 
-                href="https://wa.me/5543999030190?text=Olá! Gostaria de saber mais sobre o processo de instalação de energia solar." 
+                href="https://wa.me/5543996548091?text=Olá! Gostaria de saber mais sobre o processo de instalação de energia solar." 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-500 text-white font-semibold px-8 py-4 rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20"
@@ -637,8 +640,9 @@ function App() {
       {/* FAQ CTA */}
       <div className="mt-12 text-center mb-20">
         <p className="text-gray-600 mb-4">Ainda tem dúvidas? Fale com nossos especialistas!</p>
+        {/* FAQ CTA Button */}
         <a 
-          href="https://wa.me/5543999030190?text=Olá! Gostaria de tirar algumas dúvidas sobre energia solar." 
+          href="https://wa.me/5543996548091?text=Olá! Gostaria de tirar algumas dúvidas sobre energia solar." 
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20"
@@ -676,9 +680,14 @@ function App() {
                 </a>
               </div>
               <div className="flex items-center justify-center space-x-3">
-                <FaWhatsapp className="text-yellow-500 text-xl" />
-                <a href="tel:+5543999030190" className="text-gray-600 hover:text-yellow-600 transition-colors">
-                  (43) 99903-0190
+                {/* Footer WhatsApp Link */}
+                <a 
+                  href="https://wa.me/5543996548091" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-600 hover:text-yellow-600 transition-colors"
+                >
+                  <FaWhatsapp className="text-2xl" />
                 </a>
               </div>
             </div>
@@ -693,13 +702,13 @@ function App() {
               >
                 <FaInstagram className="text-2xl" />
               </a>
-              <a 
-                href="https://wa.me/5543999030190" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-600 hover:text-yellow-600 transition-colors"
-              >
-                <FaWhatsapp className="text-2xl" />
+            </div>
+
+            {/* Footer Phone Number */}
+            <div className="flex items-center justify-center space-x-3">
+              <FaWhatsapp className="text-yellow-500 text-xl" />
+              <a href="tel:+5543996548091" className="text-gray-600 hover:text-yellow-600 transition-colors">
+                (43) 99654-8091
               </a>
             </div>
 
