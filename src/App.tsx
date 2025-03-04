@@ -695,49 +695,49 @@ function App() {
             </div>
             
             {/* Contact Info */}
-            <div className="space-y-4 mb-8">
+            <div className="flex flex-col items-center space-y-3 mb-8">
+              {/* Address */}
               <div className="flex items-center justify-center space-x-3">
                 <FaMapMarkerAlt className="text-yellow-500 text-xl" />
                 <p className="text-gray-600">
                   Rua Espírito Santo 1806 sl.706, Londrina - PR 86020-420
                 </p>
               </div>
+              
+              {/* Email */}
               <div className="flex items-center justify-center space-x-3">
                 <FaEnvelope className="text-yellow-500 text-xl" />
                 <a href="mailto:edsontadeumello@gmail.com" className="text-gray-600 hover:text-yellow-600 transition-colors">
                   edsontadeumello@gmail.com
                 </a>
               </div>
+
+              {/* WhatsApp Phone */}
               <div className="flex items-center justify-center space-x-3">
-                {/* Footer WhatsApp Link */}
-                <a 
-                  href="https://wa.me/5543996548091" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-gray-600 hover:text-yellow-600 transition-colors"
-                >
-                  <FaWhatsapp className="text-2xl" />
+                <FaWhatsapp className="text-yellow-500 text-xl" />
+                <a href="tel:+5543996548091" className="text-gray-600 hover:text-yellow-600 transition-colors">
+                  (43) 99654-8091
                 </a>
               </div>
             </div>
 
             {/* Social Media */}
-            <div className="flex items-center justify-center space-x-6 mb-8">
+            <div className="flex items-center justify-center space-x-4 mb-8">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/maxx__sun?igsh=MWFrNHpwOGRscnU4eg%3D%3D" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-600 hover:text-yellow-600 transition-colors"
               >
                 <FaInstagram className="text-2xl" />
               </a>
-            </div>
-
-            {/* Footer Phone Number */}
-            <div className="flex items-center justify-center space-x-3">
-              <FaWhatsapp className="text-yellow-500 text-xl" />
-              <a href="tel:+5543996548091" className="text-gray-600 hover:text-yellow-600 transition-colors">
-                (43) 99654-8091
+              <a 
+                href="https://wa.me/5543996548091" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-600 hover:text-yellow-600 transition-colors"
+              >
+                <FaWhatsapp className="text-2xl" />
               </a>
             </div>
 
