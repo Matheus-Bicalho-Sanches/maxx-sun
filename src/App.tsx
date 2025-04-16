@@ -418,7 +418,7 @@ function App() {
               {/* Projects */}
               <div className="text-center bg-white/80 p-6 rounded-xl shadow-lg hover:bg-white transition-colors duration-300">
                 <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-                  {isVisible && <AnimatedNumber end={100} suffix="+" />}
+                  {isVisible && <AnimatedNumber end={500} suffix="+" />}
                 </div>
                 <p className="text-gray-600">Projetos Completos</p>
               </div>
